@@ -1,0 +1,136 @@
+@use '../util' as *;
+
+
+.scoreboard {
+    background-color: var(--bgcolor);
+    width: 90vh;
+    height: 50%;
+    display: grid;
+    align-items: baseline;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: rem(15);
+
+    .home {
+
+        &__title {
+            margin-top: rem(100);
+            margin-bottom: rem(20);
+            text-align: center;
+            width: rem(150);
+            height: rem(36);
+            font-size: rem(40);
+            letter-spacing: rem(4);
+        }
+    
+        &__score {
+            background-color: var(--black);
+            width: rem(155);
+            height: rem(120);
+            font-family: var(--font-pnt);
+            color: var(--scorecolor);
+            text-align: center;
+            font-size: rem(88);
+            margin: 0;
+            padding-top: rem(12);
+            border: solid rem(2) whitesmoke;
+        }
+
+        &__wrapper {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: rem(20);
+            width: rem(155);
+            height: rem(40);
+        }
+
+        &--pnt {
+            width: rem(40);
+            height: rem(40);
+            background: none;
+            border: solid rem(2) var(--ptnbtncolor);
+            border-radius: rem(5);
+            color: var(--ptnbtncolor);
+            font-size: rem(16);
+            letter-spacing: rem(4);
+        }
+
+
+
+    }
+
+    .guest {
+
+        &__title {
+            margin-top: rem(100);
+            margin-bottom: rem(20);
+            text-align: center;
+            width: rem(150);
+            height: rem(36);
+            font-size: rem(40);
+            letter-spacing: rem(4);
+        }
+    
+        &__score {
+            background-color: var(--black);
+            width: rem(155);
+            height: rem(120);
+            font-family: var(--font-pnt);
+            color: var(--scorecolor);
+            text-align: center;
+            font-size: rem(88);
+            margin: 0;
+            padding-top: rem(12);
+            border: solid rem(2) whitesmoke;
+        }
+
+        &__wrapper {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: rem(20);
+            width: rem(155);
+            height: rem(40);
+        }
+
+        &--pnt {
+            width: rem(40);
+            height: rem(40);
+            background: none;
+            border: solid rem(2) var(--ptnbtncolor);
+            border-radius: rem(5);
+            color: var(--ptnbtncolor);
+            font-size: rem(16);
+            letter-spacing: rem(4);
+        }
+
+
+
+    }
+    
+    .reset-btn {
+        position: absolute;
+        right: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: rem(318);
+        
+    }
+
+    .rst-btn {
+        width: rem(85);
+        height: rem(40);
+        background: none;
+        border: solid rem(2) var(--ptnbtncolor);
+        border-radius: rem(5);
+        color: var(--ptnbtncolor);
+        font-size: rem(16);
+        letter-spacing: rem(4);
+        text-transform: uppercase;
+    }
+}
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="/dist/style.css" />
+		<script defer src="/dist/script.js"></script>
+	</head>
+	<body>
+		<section class="scoreboard">
+			<div class="home">
+				<h1 class="home__title">HOME</h1>
+				<div class="home__score">
+					<span id="home-pnts" class="home--pnts">0</span>
+				</div>
+				<div class="home__wrapper">
+					<button onclick="addH1Point()" class="home--pnt">+1</button>
+					<button onclick="addH2Point()" class="home--pnt">+2</button>
+					<button onclick="addH3Point()" class="home--pnt">+3</button>
+				</div>
+			</div>
+			<div class="guest">
+				<h1 class="guest__title">GUEST</h1>
+				<div class="guest__score">
+					<span id="guest-pnts" class="guest--pnts">0<span>
+				</div>
+				<div class="guest__wrapper">
+					<button onclick="addG1Point()" class="guest--pnt">+1</button>
+					<button onclick="addG2Point()" class="guest--pnt">+2</button>
+					<button onclick="addG3Point()" class="guest--pnt">+3</button>
+				</div>
+			</div>
+			<div class="reset-btn">
+				<button onclick="reset()" id="rst-btn" class="rst-btn">Reset</button>
+			</div>
+		</section>
+
+	</body>
+</html>
